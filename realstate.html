@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>עמוד הבית - Renti</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-1.11.2.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+  <script src="js/jquery.main.js" defer></script>
+  <script src="js/build/main.js" defer></script>
+</head>
+<body>
+	<div class="wrapper">
+		<!--Header block of the page-->
+		<header id="header">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <!--top header of the page-->
+        <div class="top-header">
+          <div class="container-fluid">
+            <ul class="links-list">
+              <li><a href="#"><i class="icon-user"></i> התחבר / הירשם</a></li>
+              <li><a href="#"><i class="icon-question"></i> פרסם מודעה</a></li>
+            </ul>
+            <div class="download-link">
+              <a href="#"><i class="icon-download"></i>  הורד את האפליקציה</a>
+            </div>
+          </div>
+        </div>
+        <!--main navigation of the page-->
+        <div class="container-fluid">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="container">
+          <div class="nav-wrap">
+           <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Renti" width="70"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+         </div>
+             </div>
+           </div>
+           <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse menu" id="navbar">
+            <button type="button" class="navbar-toggle collapsed cross" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+            </button>
+            <ul class="nav navbar-nav icon-list">
+             <li><a href="#"><i class="icon-mobile"></i><span>פרסם מודעה בחינם!</span></a></li>
+             <li><a href="#"><i class="icon-laptop"></i><span>דירות להשכרה </span></a></li>
+             <li><a href="#"><i class="icon-car"></i><span>דירות למכירה</span></a></li>
+             <li><a href="#"><i class="icon-motorcycle"></i><span>קבל עדכונים בזמן אמת</span></a></li>
+             <li><a href="#"><i class="icon-wheelchair"></i><span>מה זה רנטי?</span></a>	</li>
+             <li><a href="#"><i class="icon-paw"></i><span>שאלות ותשובות</span></a>	</li>
+             <li><a href="#"><i class="icon-at"></i><span>סוכן חכם</span></a></li>
+             <li><a href="#"><i class="icon-at"></i><span>הורד את האפליקציה</span></a></li>
+             <li><a href="#"><i class="icon-book"></i><span>צור קשר</span></a></li>
+           </ul>
+         </div><!-- /.navbar-collapse -->
+       </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <!--Main content of the page-->
+    <main class="main">
+      <!--filter of the page-->
+      <div class="filter-wrap">
+        <div class="container">
+          <div class="five-columns">
+            <div class="city_col">
+              <label for="region">בחר אזור</label>
+              <select id="region"  class="form-control">
+                <optgroup label="Popular Cities">
+                  <option selected="" style="display:none;color:#eee;">כל האזורים</option>
+                  <option>Birmingham</option>
+                  <option>Anchorage</option>
+                  <option>Phoenix</option>
+                  <option>Little Rock</option>
+                  <option>Los Angeles</option>
+                  <option>Denver</option>
+                  <option>Bridgeport</option>
+                  <option>Wilmington</option>
+                  <option>Jacksonville</option>
+                  <option>Atlanta</option>
+                  <option>Honolulu</option>
+                  <option>Boise</option>
+                  <option>Chicago</option>
+                  <option>Indianapolis</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="city_col">
+              <label for="town">בחר ישוב</label>
+              <select id="town" class="form-control">
+                <optgroup label="Popular Cities">
+                  <option selected="">בחר ישוב</option>
+                  <option>Birmingham</option> 
+                </optgroup>
+              </select>
+            </div>
+            <div class="city_col">
+              <label for="neigh">בחר שכונה</label>
+              <select id="neigh" class="form-control">
+                <optgroup label="Popular Cities">
+                  <option selected="">בחר שכונה</option>
+                  <option>Birmingham</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="city_col">
+              <label for="property">סוג הנכס</label>
+              <select id="property" class="form-control">
+                <optgroup label="Popular Cities">
+                  <option selected="">הכל</option>
+                  <option>Birmingham</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="city_col">
+              <div class="col-wrap">
+                <label>סוג הנכס</label>
+                <select class="form-control">
+                  <optgroup label="Popular Cities">
+                    <option selected="">1</option>
+                    <option>Birmingham</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="col-wrap">
+                <label>סוג הנכס</label>
+                <select class="form-control">
+                  <optgroup label="Popular Cities">
+                    <option selected="">1</option>
+                    <option>Birmingham</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--tabs holder of the page-->
+      <div class="realstate-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="sidebar">
+                <div class="sidebar-top">
+                  <h3>טווח מחירים</h3>
+                  <label >סנן לפי</label>
+                  <select class="form-control">
+                    <option data-tokens="All">All</option>
+                    <option data-tokens="Rent">Rent</option>
+                    <option data-tokens="Sale">Sale</option>
+                  </select>
+                </div>
+                <div class="ads-wrap">
+                  <span class="ad-title text-center">מודעות מתיווך</span>
+                  <ul class="ad-list">
+                    <li>
+                      <div class="img-holder"><img src="images/img20.jpg" alt="image description"></div>
+                      <a class="title-text" href="#">Lorem Ipsum is simply dummy text of the printing industry</a>
+                      <span class="cost">450$</span>
+                    </li>
+                     <li>
+                      <div class="img-holder"><img src="images/img21.jpg" alt="image description"></div>
+                      <a class="title-text" href="#">Lorem Ipsum is simply dummy text of the printing industry</a>
+                      <span class="cost">380$</span>
+                    </li>
+                     <li>
+                      <div class="img-holder"><img src="images/img22.jpg" alt="image description"></div>
+                      <a class="title-text" href="#">Lorem Ipsum is simply dummy text of the printing industry</a>
+                      <span class="cost">450$</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">הכל</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">פרטי</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">תיווך</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home">
+                  <div class="view-wrap">
+                    <span class="text">סדר תצוגה:</span>
+                    <ul class="view-list"  id="viewcontrols">
+                      <li><a href="#" class="listview"><span class="icon-grid"></span></a></li>
+                      <li><a href="#" class="gridview active"><span class="icon-list2"></span></a></li>
+                    </ul>
+                  </div>
+                  <div class="content-hold">
+                    <div class="grid-wrap">
+                      <ul class="list">
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title"> 3 חדרים בנווה סביון</a>
+                              <p>רחוב צאלון, קומה 12 <br>למכירה בנווה סביון, דירה משופצת ומרוהטת. מומלצת במיוחד לזוגות צעירים.</p>
+                              <div class="bottom-wrap">
+                                <a href="#" class="read-btn">לפרטים נוספים</a>
+                                <ul class="social-list">
+                                  <li><a href="#"><span class="icon-heart"></span></a></li>
+                                  <li><a href="#"><span class="icon-facebook2"></span></a></li>
+                                  <li><a href="#"><span class="icon-whatsapp"></span></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">היום, 17:55</time>
+                              <span class="text"><strong>3600 </strong>ש''ח</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/01.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">It is a long established fact that a reader</a>
+                              <span class="price">$310</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/02.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">>Contrary to popular belief, Lorem Ipsum is not</a>
+                              <span class="price">$190</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/03.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">The standard chunk of Lorem Ipsum used since the</a>
+                              <span class="price">$480</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/04.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a>
+                              <span class="price">$859</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/05.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">But I must explain to you how all this mistaken idea of denouncing</a>
+                              <span class="price">$1299</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/06.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</a>
+                              <span class="price">1099</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/07.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">On the other hand, we denounce with righteous dislike men</a>
+                              <span class="price">$290</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/08.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">There are many variations of passages of Lorem Ipsum</a>
+                              <span class="price">$899</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/09.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et qua</a>
+                              <span class="price">$199</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/10.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">There are many variations of passages of Lorem Ipsum</a>
+                              <span class="price">$250</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/13.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">who are so beguiled and demoralized by the charms of pleasure of the moment</a>
+                              <span class="price">$189</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/13.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">you need to be sure there isn't anything embarrassing hidden</a>
+                              <span class="price">$1090</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/14.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">looked up one of the more obscure Latin words</a>
+                              <span class="price">$590</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/14.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <ul class="pagination pagination-sm">
+                      <li><a href="#">Prev</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">6</a></li>
+                      <li><a href="#">7</a></li>
+                      <li><a href="#">8</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile">
+                  <div class="view-wrap">
+                    <span class="text">סדר תצוגה:</span>
+                    <ul class="view-list">
+                      <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i> asda</a></li>
+                      <li><a href="#"><i class="fa fa-th-list" aria-hidden="true">das</i></a></li>
+                    </ul>
+                  </div>
+                  <div class="content-hold">
+                    <div class="grid-wrap">
+                      <ul class="list ">
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">It is a long established fact that a reader</a>
+                              <span class="price">$310</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/02.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">>Contrary to popular belief, Lorem Ipsum is not</a>
+                              <span class="price">$190</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/03.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">The standard chunk of Lorem Ipsum used since the</a>
+                              <span class="price">$480</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/04.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a>
+                              <span class="price">$859</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/05.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">But I must explain to you how all this mistaken idea of denouncing</a>
+                              <span class="price">$1299</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/06.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</a>
+                              <span class="price">1099</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/07.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">On the other hand, we denounce with righteous dislike men</a>
+                              <span class="price">$290</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/08.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">There are many variations of passages of Lorem Ipsum</a>
+                              <span class="price">$899</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/09.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et qua</a>
+                              <span class="price">$199</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/10.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">There are many variations of passages of Lorem Ipsum</a>
+                              <span class="price">$250</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/13.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">who are so beguiled and demoralized by the charms of pleasure of the moment</a>
+                              <span class="price">$189</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/13.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">you need to be sure there isn't anything embarrassing hidden</a>
+                              <span class="price">$1090</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/14.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">looked up one of the more obscure Latin words</a>
+                              <span class="price">$590</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/14.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <ul class="pagination pagination-sm">
+                      <li><a href="#">Prev</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">6</a></li>
+                      <li><a href="#">7</a></li>
+                      <li><a href="#">8</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="messages">
+                  <div class="view-wrap">
+                    <span class="text">סדר תצוגה:</span>
+                    <ul class="view-list">
+                      <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i> asda</a></li>
+                      <li><a href="#"><i class="fa fa-th-list" aria-hidden="true">das</i></a></li>
+                    </ul>
+                  </div>
+                  <div class="content-hold">
+                    <div class="grid-wrap">
+                      <ul class="list">
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title"> 3 חדרים בנווה סביון</a>
+                              <p>רחוב צאלון, קומה 12 <br>למכירה בנווה סביון, דירה משופצת ומרוהטת. מומלצת במיוחד לזוגות צעירים.</p>
+                              <div class="bottom-wrap">
+                                <a href="#" class="read-btn">לפרטים נוספים</a>
+                                <ul class="social-list">
+                                  <li><a href="#">whatsapp</a></li>
+                                  <li><a href="#">fb</a></li>
+                                  <li><a href="#">life</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">היום, 17:55</time>
+                              <span class="text"><strong>3600 </strong>ש''ח</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/01.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">It is a long established fact that a reader</a>
+                              <span class="price">$310</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/02.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">>Contrary to popular belief, Lorem Ipsum is not</a>
+                              <span class="price">$190</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/03.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">The standard chunk of Lorem Ipsum used since the</a>
+                              <span class="price">$480</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/04.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a>
+                              <span class="price">$859</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/05.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">But I must explain to you how all this mistaken idea of denouncing</a>
+                              <span class="price">$1299</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/06.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</a>
+                              <span class="price">1099</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/07.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">On the other hand, we denounce with righteous dislike men</a>
+                              <span class="price">$290</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/08.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">There are many variations of passages of Lorem Ipsum</a>
+                              <span class="price">$899</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/09.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et qua</a>
+                              <span class="price">$199</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/10.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">There are many variations of passages of Lorem Ipsum</a>
+                              <span class="price">$250</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/13.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">who are so beguiled and demoralized by the charms of pleasure of the moment</a>
+                              <span class="price">$189</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/13.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">you need to be sure there isn't anything embarrassing hidden</a>
+                              <span class="price">$1090</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/14.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="detail-hold">
+                            <div class="data-wrap">
+                              <a href="#"  class="title">looked up one of the more obscure Latin words</a>
+                              <span class="price">$590</span>
+                              <div class="bottom-wrap"> 
+                                <ul class="catpath">
+                                  <li>Real Estate</li>
+                                  <li>PG &amp; Roommates</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="time-hold">
+                              <time datetime="2009-10-09">Today, 17:45</time>
+                              <span class="text">City name</span>
+                            </div>
+                            <div class="image-wrap">
+                              <a href="#" style="background-image: url('images/14.jpg');"></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <ul class="pagination pagination-sm">
+                      <li><a href="#">Prev</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">6</a></li>
+                      <li><a href="#">7</a></li>
+                      <li><a href="#">8</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Footer block of the page-->
+    <footer id="footer">
+     <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="footer-content">
+              <h3>מה זה רנטי?</h3>
+              <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט .</p>
+              <p>טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט .</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer-content">
+              <h3>מדריכים לרנטי</h3>
+              <ul class="extralists">
+                <li><a href="#"> איך מפרסמים מודעה?</a></li>
+                <li><a href="#"> טקסט </a></li>
+                <li><a href="#"> טקסט</a></li>
+                <li><a href="#"> טקסט</a></li>
+                <li><a href="#"> טקסט</a></li>
+                <li><a href="#"> טקסט</a></li>
+                <li><a href="#"> טקסט</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer-content">
+              <h3>רנטי חברתי</h3>
+              <ul class="extralists">
+                <li><a href="#">רנטי בפייסבוק</a></li>
+                <li><a href="#">רנטי ביוטיוב</a></li>
+                <li><a href="#">רנטי בתקשורת</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer-content">
+              <h3>דבר עם רנטי</h3>
+              <span class="hq">פרסם אצלנו</span>
+              <ul class="contact-list">
+                <li><span class="icon-youtube"></span>שד' מנחם בגין, אור יהודה</li> 
+                <li><a href="tel:03-1234567">03-1234567<span class="icon-share"></span></a></li>
+                <li><a href="mailto:support@renti.co.il">support@renti.co.il<span class="icon-mail"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="logo-hold">
+            <a href="#"><span class="green">Re</span><span>nti</span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="backtotop" href="#wrapper" id="back-top"><span class="icon-level-up"></span></a>
+  </div>
+</body>
+</html>
